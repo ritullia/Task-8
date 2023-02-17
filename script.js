@@ -7,9 +7,7 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
 
-function Calculator(numOne, numTwo) {
-    this.numOne = numOne;
-    this.numTwo = numTwo;
+
 
     this.sum = function () {
         console.log(`${this.numOne + this.numTwo}`);
@@ -33,3 +31,4 @@ myCalculator.sum();
 myCalculator.subtraction();
 myCalculator.multiplication();
 myCalculator.division();
+
