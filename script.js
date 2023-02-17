@@ -28,6 +28,7 @@ function Calculator(numOne, numTwo) {
 
 const myCalculator = new Calculator(125, 60);
 console.log(myCalculator);
+
 myCalculator.sum();
 myCalculator.subtraction();
 myCalculator.multiplication();
