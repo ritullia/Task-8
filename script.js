@@ -6,8 +6,9 @@ multiplication() - priima du skaičius ir grąžina jų daugybos rezultatą;
 division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
-
-
+function Calculator(numOne, numTwo) {
+    this.numOne = numOne;
+    this.numTwo = numTwo;
 
     this.sum = function () {
         console.log(`${this.numOne + this.numTwo}`);
@@ -21,7 +22,6 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
     this.division = function () {
         console.log(`${this.numOne / this.numTwo}`);
     }
-
 }
 
 const myCalculator = new Calculator(125, 60);
