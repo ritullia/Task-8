@@ -24,11 +24,43 @@ function Calculator(numOne, numTwo) {
     }
 }
 
+
 const myCalculator = new Calculator(125, 60);
 console.log(myCalculator);
 
-myCalculator.sum();
-myCalculator.subtraction();
-myCalculator.multiplication();
-myCalculator.division();
+myCalculator.sum()
+myCalculator.subtraction()
+myCalculator.multiplication()
+myCalculator.division()
 
+// variantas su prompt 
+
+function Calculat() {
+
+    this.read = function () {
+        this.numberA = +prompt('number', 0)
+        this.numberB = +prompt('number', 0)
+    };
+
+    this.sum = function () {
+        return this.numberA + this.numberB;
+    };
+    this.mul = function () {
+        return this.numberA * this.numberB;
+    };
+    this.sub = function () {
+        return this.numberA - this.numberB;
+    };
+    this.div = function () {
+        return this.numberA / this.numberB;
+    };
+};
+
+let calculator = new Calculat();
+console.log(calculator)
+calculator.read();
+
+console.log("Sum = " + calculator.sum());
+console.log("Mul = " + calculator.mul());
+console.log("Sub = " + calculator.sub());
+console.log("Div = 10" + calculator.div());
