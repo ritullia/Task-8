@@ -52,7 +52,7 @@ function Calculat() {
         return this.numberA - this.numberB;
     };
     this.div = function () {
-        return this.numberA / this.numberB;
+        return Math.floor(this.numberA / this.numberB);
     };
 };
 
@@ -63,4 +63,4 @@ calculator.read();
 console.log("Sum = " + calculator.sum());
 console.log("Mul = " + calculator.mul());
 console.log("Sub = " + calculator.sub());
-console.log("Div = 10" + calculator.div());
+console.log("Div = " + calculator.div());
